@@ -1,21 +1,20 @@
 <?php
 /**
- * Title: Social Linktree
- * Slug: chimera-master/content-social-linktree
+ * Title: Linktree
+ * Slug: chimera-master/linktree
  * Description: 
  * Categories: chimera-greyd
  * Keywords: 
- * Viewport Width: 800
+ * Viewport Width: 600
  * Block Types: 
  * Post Types: 
  * Inserter: true
  */
 ?>
-<!-- wp:group {"className":"","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained","contentSize":"600px"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:group {"className":"","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<!-- wp:group {"className":"","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"width":"100px","sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-rounded"} -->
-<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/patterns/images/profile.svg" alt="" style="width:100px"/></figure>
+<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/profile.svg" alt="" style="width:100px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","level":1,"className":"","fontSize":"x-large"} -->
@@ -60,5 +59,4 @@
 <div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline"><a class="wp-block-button__link wp-element-button">Make a donation</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
-<!-- /wp:group --></div>
 <!-- /wp:group -->

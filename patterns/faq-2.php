@@ -10,11 +10,9 @@
  * Post Types: 
  * Inserter: true
  */
-
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"64px","right":"20px","bottom":"64px","left":"20px"},"blockGap":"80px"}},"layout":{"type":"constrained","contentSize":"1280px","wideSize":"1440px"}} -->
-<div class="wp-block-group alignfull" style="padding-top:64px;padding-right:20px;padding-bottom:64px;padding-left:20px"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"80px","left":"80px"}}}} -->
-<div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"blockGap":"32px"}}} -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"80px","left":"80px"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"style":{"spacing":{"blockGap":"32px"}}} -->
 <div class="wp-block-column"><!-- wp:heading {"textAlign":"left","style":{"typography":{"fontSize":"36px","fontStyle":"normal","fontWeight":"800","textTransform":"capitalize"}},"textColor":"contrast"} -->
 <h2 class="wp-block-heading has-text-align-left has-contrast-color has-text-color" style="font-size:36px;font-style:normal;font-weight:800;text-transform:capitalize">Frequently asked questions</h2>
 <!-- /wp:heading -->
@@ -41,7 +39,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:separator {"style":{"color":{"background":"#e7e7e7"}},"className":"is-style-default"} -->
+<!-- wp:separator {"className":"is-style-default","style":{"color":{"background":"#e7e7e7"}}} -->
 <hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-default" style="background-color:#e7e7e7;color:#e7e7e7"/>
 <!-- /wp:separator -->
 
@@ -57,7 +55,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:separator {"style":{"color":{"background":"#e7e7e7"}},"className":"is-style-default"} -->
+<!-- wp:separator {"className":"is-style-default","style":{"color":{"background":"#e7e7e7"}}} -->
 <hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-default" style="background-color:#e7e7e7;color:#e7e7e7"/>
 <!-- /wp:separator -->
 
@@ -73,7 +71,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:separator {"style":{"color":{"background":"#e7e7e7"}},"className":"is-style-default"} -->
+<!-- wp:separator {"className":"is-style-default","style":{"color":{"background":"#e7e7e7"}}} -->
 <hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-default" style="background-color:#e7e7e7;color:#e7e7e7"/>
 <!-- /wp:separator -->
 
@@ -89,5 +87,4 @@
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group -->
+<!-- /wp:columns -->

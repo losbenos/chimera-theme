@@ -13,8 +13,7 @@
  */
 register_block_pattern_category( 'chimera-layout', [ 'label' => __( 'Chimera Layout', 'chimera-master' ), 'pm_custom' => true ] );
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-base-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|30"}}}} -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|30"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"40%","layout":{"type":"constrained","contentSize":"260px","justifyContent":"left"}} -->
 <div class="wp-block-column" style="flex-basis:40%"><!-- wp:paragraph -->
 <p>The revitalized art gallery is set to redefine cultural landscape.</p>
@@ -22,8 +21,8 @@ register_block_pattern_category( 'chimera-layout', [ 'label' => __( 'Chimera Lay
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"60%","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
-<div class="wp-block-column" style="flex-basis:60%"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.2"}},"fontSize":"x-large","fontFamily":"heading"} -->
-<p class="has-heading-font-family has-x-large-font-size" style="line-height:1.2">With meticulous attention to detail and a commitment to excellence, we create spaces that inspire, elevate, and enrich the lives of those who inhabit them.</p>
+<div class="wp-block-column" style="flex-basis:60%"><!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">With meticulous attention to detail and a commitment to excellence, we create spaces that inspire, elevate, and enrich the lives of those who inhabit them.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|30"}}}} -->
@@ -40,5 +39,4 @@ register_block_pattern_category( 'chimera-layout', [ 'label' => __( 'Chimera Lay
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group -->
+<!-- /wp:columns -->
