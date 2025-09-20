@@ -131,3 +131,94 @@ function chimera_enqueue_custom_block_styles() {
 	}
 }
 add_action( 'init', 'chimera_enqueue_custom_block_styles' );
+
+
+//Registers block pattern categories and types.
+function chimera_register_block_pattern_categories() {
+
+	/* Functionality specific to the Block Pattern Explorer plugin. */
+	if ( function_exists( 'register_block_pattern_category_type' ) ) {
+		register_block_pattern_category_type( 'chimera', array( 'label' => __( 'Chimera', 'chimera' ) ) );
+	}
+
+	$block_pattern_categories = array(
+		'chimera-footer'       => array(
+			'label'         => __( 'Chimera Footer', 'chimera' ),
+			'categoryTypes' => array( 'chimera-footer' ),
+		),
+		'chimera-greyd'       => array(
+			'label'         => __( 'Chimera Greyd', 'chimera' ),
+			'categoryTypes' => array( 'chimera-greyd' ),
+		),
+		'chimera-cta'      => array(
+			'label'         => __( 'Chimera CTA', 'chimera' ),
+			'categoryTypes' => array( 'chimera-cta' ),
+		),
+		'chimera-people'      => array(
+			'label'         => __( 'Chimera People', 'chimera' ),
+			'categoryTypes' => array( 'chimera-people' ),
+		),
+		'chimera-faq'      => array(
+			'label'         => __( 'Chimera FAQ', 'chimera' ),
+			'categoryTypes' => array( 'chimera-faq' ),
+		),
+		'chimera-features'      => array(
+			'label'         => __( 'Chimera Features', 'chimera' ),
+			'categoryTypes' => array( 'chimera-features' ),
+		),
+		'chimera-footer'      => array(
+			'label'         => __( 'Chimera Footer', 'chimera' ),
+			'categoryTypes' => array( 'chimera-footer' ),
+		),
+		'chimera-gallery'      => array(
+			'label'         => __( 'Chimera Gallery', 'chimera' ),
+			'categoryTypes' => array( 'chimera-gallery' ),
+		),
+		'chimera-header'      => array(
+			'label'         => __( 'Chimera Header', 'chimera' ),
+			'categoryTypes' => array( 'chimera-header' ),
+		),
+		'chimera-hero'      => array(
+			'label'         => __( 'Chimera Hero', 'chimera' ),
+			'categoryTypes' => array( 'chimera-hero' ),
+		),
+		'chimera-pricing'      => array(
+			'label'         => __( 'Chimera Pricing', 'chimera' ),
+			'categoryTypes' => array( 'chimera-pricing' ),
+		),
+		'chimera-testimonials'      => array(
+			'label'         => __( 'Chimera Testimonials', 'chimera' ),
+			'categoryTypes' => array( 'chimera-testimonials' ),
+		),
+	);
+
+	foreach ( $block_pattern_categories as $slug => $properties ) {
+		register_block_pattern_category( $slug, $properties );
+	}
+}
+add_action( 'init', 'chimera_register_block_pattern_categories', 9 );
+
+function chimera_coming_soon_redirect() {
+    // Skip if user is logged in
+    if (is_user_logged_in()) {
+        return;
+    }
+
+    // Allow access to wp-login.php and wp-admin
+    if (
+        strpos($_SERVER['REQUEST_URI'], 'wp-login.php') !== false
+        //strpos($_SERVER['REQUEST_URI'], 'wp-admin') !== false
+    ) {
+        return;
+    }
+
+    // Get the coming soon page
+    $coming_soon = get_page_by_path('coming-soon');
+
+    // If we're not already on the coming soon page and it exists
+    if ($coming_soon && !is_page('coming-soon')) {
+        wp_redirect(get_permalink($coming_soon->ID));
+        exit;
+    }
+}
+add_action('template_redirect', 'chimera_coming_soon_redirect');
