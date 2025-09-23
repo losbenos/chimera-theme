@@ -1,8 +1,11 @@
 /* Button
 --------------------------------------------- */
 
+.is-style-outline {
+    border-color: var( --wp--preset--color--tertiary );
+    color: var( --wp--preset--color--tertiary );
+}
 
-
-.is-style-shadow {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+.is-style-outline a {
+        padding-block: .5rem;
 }
